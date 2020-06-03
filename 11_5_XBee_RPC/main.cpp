@@ -57,17 +57,17 @@ int main(){
 
   }
 
-  xbee.printf("ATMY <REMOTE_MY>\r\n");
+  xbee.printf("ATMY 0x240\r\n");
 
-  reply_messange(xbee_reply, "setting MY : 0x203");
-
-
-  xbee.printf("ATDL <REMOTE_DL>\r\n");
-
-  reply_messange(xbee_reply, "setting DL : 0x103");
+  reply_messange(xbee_reply, "setting MY : 0x240");
 
 
-  xbee.printf("ATID <PAN_ID>\r\n");
+  xbee.printf("ATDL 0x140\r\n");
+
+  reply_messange(xbee_reply, "setting DL : 0x140");
+
+
+  xbee.printf("ATID 0x1\r\n");
 
   reply_messange(xbee_reply, "setting PAN ID : 0x1");
 

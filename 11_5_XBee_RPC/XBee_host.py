@@ -19,20 +19,20 @@ print("Enter AT mode.")
 print(char.decode())
 
 
-s.write("ATMY 0x103\r\n".encode())
+s.write("ATMY 0x140\r\n".encode())
 
 char = s.read(3)
 
-print("Set MY 0x103.")
+print("Set MY 0x140.")
 
 print(char.decode())
 
 
-s.write("ATDL 0x203\r\n".encode())
+s.write("ATDL 0x240\r\n".encode())
 
 char = s.read(3)
 
-print("Set DL 0x203.")
+print("Set DL 0x240.")
 
 print(char.decode())
 
@@ -87,9 +87,9 @@ print("start sending RPC")
 while True:
 
     # send RPC to remote
-    print("start sending RPC1")
+
     s.write("/myled1/write 1\r".encode())
-    print("end sending RPC1")
+
     time.sleep(1)
 
 
